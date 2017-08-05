@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+<script>
+  var show = function() {
+     console.log("Orientation type is " + screen.orientation.type);
+     console.log("Orientation angle is " + screen.orientation.angle);
+  }
+
+  screen.orientation.addEventListener("change", show);
+  window.onload = show;
+</script>
+
+<button onclick='screen.orientation.unlock()'>
+  Unlock
+</button>
+<button onclick="screen.orientation.lock('portrait')">
+  Lock to portrait
+</button>
+<button onclick="screen.orientation.lock('landscape')">
+  Lock to landscape
+</button>
+<br>
+<svg width="1500" height="500">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+
+	<rect x="150" y="120" width="150" height="150" width="300" height="100" style="fill:rgb(90,90,255);stroke-width:3;stroke:rgb(0,0,0)" />
+
+		<text  x="100" y="20" style="fill:red;">Several lines:
+		<tspan x="100" y="45">First line.</tspan>
+		<tspan x="100" y="70">Second line.</tspan>
+	</text>
+
+</svg>
+
+
+ </body>
+</html>
