@@ -27,6 +27,19 @@
 
   screen.orientation.addEventListener("change", show);
   window.onload = show;
+
+  var muestra = function() {
+     console.log("Orientation type is " + screen.orientation.type);
+     console.log("Orientation angle is " + screen.orientation.angle);
+  }
+
+  screen.orientation.addEventListener("change", show);
+  window.onload = muestra;
+
+	function muestraOrientacion() {
+		document.getElementById("orientacion").innerHTML = screen.orientation.type;
+	}
+
 </script>
 
 <!-- 
@@ -37,6 +50,14 @@
   Lock to portrait
 </button>
  -->
+
+
+<button onclick="muestraOrientacion()">Ver orientacion</button>
+
+<p id="orientacion"></p>
+
+
+
 <button onclick="screen.orientation.lock('landscape')">
   Lock to landscape
 </button>
@@ -55,6 +76,8 @@
 
 </svg>
 
+<p>"Orientation type is " + screen.orientation.type);
+</p>
 
  </body>
 </html>
