@@ -9,7 +9,7 @@
   <name>Screen Test</name>
 
   <description>
-	Screen Test es una aplicacion para verificar el forzado de una orientación particular en el dispositivo
+	Screen Test es una aplicacion para verificar el forzado de una orientaciÃ³n particular en el dispositivo
   </description>
 
   <author href="http://www.ingverger.com.ar/sumado.php" email="ingverger@gmail.com">
@@ -41,6 +41,5 @@
         <splash src="res/screen/android/drawable-port-xxxhdpi-screen.png"   density="port-xxxhdpi" />
 
     </platform>
-
 
 </widget>
